@@ -1,0 +1,3 @@
+django-crontab
+git+https://github.com/manahl/arctic.git
+vectorbt
