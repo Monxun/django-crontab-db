@@ -17,11 +17,6 @@ RUN pip install -r requirements.txt
 RUN mkdir /cron
 RUN touch /cron/django_cron.log
 
-EXPOSE 4444
+EXPOSE 8000
 
-CMD services cron start && \
- python manage.py runserver 0.0.0.0:4444
- 
-
-
-
+CMD service cron start && python manage.py runserver 0.0.0.0:7777
